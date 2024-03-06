@@ -1,0 +1,328 @@
+@import url("../font/poppins.css");
+
+body,
+html {
+  height: 100%;
+  font-family: "Poppins" !important;
+  background: #fff !important;
+}
+.text-black {
+  color: #000000 !important;
+}
+.text-primary {
+  color: #008bd3 !important;
+}
+button:focus {
+  outline: none;
+}
+.hamburger-btn {
+  background-color: transparent;
+  border: 0;
+}
+.sidebar {
+  height: 100%;
+  background-color: #008bd3;
+  color: #fff;
+  transition: width 0.3s ease;
+}
+.sidebar.active {
+  width: 280px !important;
+  z-index: 99999;
+  overflow: auto;
+  display: block !important;
+}
+.sidebar-logo {
+  text-align: center;
+  padding: 20px 0;
+  border-bottom: 1px solid #dddddd;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+.page-header,
+.sidebar-logo {
+  height: 105px !important;
+}
+.page-header {
+  padding: 20px 0;
+  border-bottom: 1px solid #dddddd;
+}
+.sidebar-logo img {
+  width: 60%;
+}
+.sidebar-menu ul {
+  padding-top: 20px;
+  padding-left: 0;
+  list-style: none;
+}
+.table td,
+.table th {
+  padding: 15px 0 !important;
+  vertical-align: middle;
+  border-top: 1px solid #dee2e6;
+}
+a.nav-link {
+  padding: 10px 20px;
+  box-sizing: border-box;
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+a.nav-link svg path {
+  fill: #fff;
+}
+.nav-link:hover,
+.nav-link:focus {
+  color: #fff !important;
+}
+.nav-link.active:hover,
+.nav-link.active:focus {
+  color: #000 !important;
+}
+a.nav-link.active svg path {
+  fill: #008bd3;
+}
+.nav-link.active {
+  background-color: #ffffff !important;
+  color: #000;
+}
+.sidebar-menu li a {
+  color: #fff;
+  text-decoration: none;
+}
+.sidebar-menu li.active a {
+  font-weight: bold;
+}
+.dashboard-title h1 {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 30px;
+  color: #000000;
+}
+
+.breadcrimb span {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #cccccc;
+}
+.notify-btn {
+  border-radius: 100% !important;
+  width: 60px;
+  height: 60px;
+  background: transparent;
+  border: 1px solid #eeeeee !important;
+  margin-right: 10px;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+.dropdown-toggle::after {
+  display: none;
+}
+.profile-btn {
+  border-radius: 100px;
+  width: 60px;
+  height: 60px;
+  background: transparent;
+  border: 0;
+}
+.card-box {
+  background: #ffffff;
+  border: 1px solid #dddddd;
+  border-radius: 30px;
+}
+.card-box .block {
+  border-bottom: 1px solid #dddddd;
+  padding: 20px 0px;
+}
+.card-box h4 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.card-box h2 {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 30px;
+  color: #000000;
+  margin-bottom: 0;
+}
+.card-box a {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+}
+.search-form {
+  background: #ffffff;
+  border: 1px solid #dddddd;
+  border-radius: 10px;
+  padding-left: 10px;
+  position: relative;
+}
+
+.search-form button {
+  background: 0;
+  border: 0;
+  outline: 0;
+  position: absolute;
+  top: 12px;
+}
+input#search {
+  border: 0;
+  outline: 0;
+  padding: 15px;
+  background-color: transparent;
+  margin-left: 20px;
+}
+.vehicle-name {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  color: #000000;
+}
+.vehicle-rating {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #eac739;
+}
+.gray-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #cccccc;
+  margin-bottom: 0;
+}
+.text-lg {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  color: #000;
+  margin-bottom: 0;
+  margin-top: 10px;
+}
+.status {
+  border-radius: 10px;
+  padding: 6px 19px;
+  width: 130px;
+  display: block;
+}
+.Upcoming {
+  background: rgba(191, 121, 174, 0.15);
+  color: #bf79ae;
+}
+.Cancelled {
+  background: rgba(196, 59, 51, 0.15);
+  color: #c63a33;
+}
+.Completed {
+  background: rgba(108, 201, 172, 0.15);
+  color: #6cc9ac;
+}
+.In-Progress {
+  background: rgba(255, 139, 46, 0.15);
+  color: #ff8b2e;
+}
+ul.dropdown-notifications-wrapper {
+  right: 90px;
+  left: auto;
+  height: 590px;
+  overflow: auto;
+  width: 350px;
+}
+.form-wrapper {
+  box-sizing: border-box;
+  background: rgb(255, 255, 255);
+  border: 1px solid rgb(238, 238, 238);
+  border-radius: 100px;
+  padding: 20px;
+  position: relative;
+  z-index: 9999;
+}
+.input-wrapper {
+  margin-left: 10px;
+  width: 230px;
+}
+.input-wrapper label {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  color: #000 !important;
+}
+.input-wrapper input,
+select {
+  background: none;
+  border: 0;
+  outline: 0;
+}
+.btn-submit {
+  border-radius: 50px !important;
+  background-color: #008bd3;
+  color: #fff;
+  padding: 19px 60px !important;
+  outline: 0;
+  border: 0;
+}
+select:disabled {
+  color: #ccc !important;
+}
+.vehicle-card {
+  height: 450px;
+}
+.vehicle-card {
+  box-sizing: border-box;
+  border: 1px solid rgb(238, 238, 238) !important;
+  border-radius: 30px !important;
+  padding: 30px !important;
+  margin-bottom: 0px;
+}
+.vehicle-image {
+  width: 100% !important;
+}
+.rating {
+  display: flex;
+}
+.rating img {
+  width: auto !important;
+}
+.rating span {
+  font-size: 16px;
+  color: #eac739;
+  font-weight: 500;
+  margin-left: 10px;
+}
+.car-title {
+  font-size: 30px;
+  font-weight: 600;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #000 !important;
+}
+.location-away {
+  color: #cccccc;
+  font-size: 16px;
+  font-weight: 500;
+  display: flex;
+}
+.location-away img {
+  width: auto !important;
+  margin-right: 10px;
+}
+.btn-primary {
+  color: #fff !important;
+  background-color: #008bd3 !important;
+  border-color: #008bd3 !important;
+}
+.btn {
+  padding: 12px 20px !important;
+  border-radius: 10px !important;
+}
+.btn-outline {
+  border: 1px solid #008bd3 !important;
+  color: #008bd3 !important;
+}

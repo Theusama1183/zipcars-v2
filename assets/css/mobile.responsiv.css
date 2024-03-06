@@ -1,0 +1,121 @@
+@media only screen and (max-width: 1024px) {
+  .highlight-sction .container {
+    padding: 30px;
+  }
+  .popup-content {
+    width: 100%;
+    height: 200px;
+  }
+  .popup-content iframe {
+    height: 160px;
+  }
+  .vehicle-card,
+  .action-card {
+    margin-top: 10px;
+  }
+  .owl-nav {
+    display: none !important;
+  }
+  .offset-1 {
+    margin-left: 0 !important;
+  }
+  .left-dot-image,
+  .right-dot-image,
+  .blue-dots-img,
+  .black-dots-img {
+    display: none !important;
+  }
+  .form-wrapper {
+    border-radius: 30px;
+  }
+  .form-wrapper .col-lg {
+    margin-top: 15px;
+  }
+  .form-wrapper img {
+    width: 30px;
+  }
+  .input-wrapper,
+  .input-wrapper input,
+  .btn-wrapper,
+  .btn-submit {
+    width: 100%;
+  }
+  .login-container {
+    width: 75% !important;
+  }
+  .thumbnails {
+    overflow: auto;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .h-divider {
+    transform: rotate(90deg);
+  }
+  .contact-form-conainer form {
+    padding: 10px;
+  }
+  .black-ellipse-img {
+    right: 65px;
+  }
+  .dot-box-img {
+    margin-left: 65px;
+    margin-top: -50px;
+  }
+  .contact-form-conainer {
+    margin-top: 50px;
+  }
+  .login-container {
+    width: 100% !important;
+  }
+  .login-section-container {
+    margin-top: 50px;
+  }
+  .form-wapper {
+    padding: 40px 20px;
+  }
+  .primary-text {
+    font-size: 48px;
+    line-height: 56px;
+}
+.section-heading {
+  font-size: 36px;
+  line-height: 46px;
+}
+.vehicle-list h2 {
+  font-size: 36px;
+  line-height: 46px;
+}
+.testimonial-user {
+  flex-direction: column;
+}
+img.testimonial-image {
+  width: 64px !important;
+  margin-right: auto;
+}
+.testimonial-user .user {
+  margin-left: 0px;
+}
+.col-heading {
+  margin-top: 30px;
+}
+.footer-nav {
+  margin-top: 0;
+}
+.copywrite-section .col-lg {
+  justify-content: center;
+}
+.social-icon-wrapper {
+  justify-content: center !important;
+
+}
+.copywrite-text {
+  text-align: center;
+}
+.banner-video-wrapper {
+margin-top: 100px;
+  }
+  video#myVideo {
+    width: 100%;
+}
+}
