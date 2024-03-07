@@ -14324,10 +14324,6 @@ html:not([dir="rtl"]) .toast.bs-toast .toast-header .btn-close {
   --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-gray-rgb), var(--bs-bg-opacity)) !important;
 }
-.bg-black {
-  --bs-bg-opacity: 1;
-  background-color: rgba(var(--bs-black-rgb), var(--bs-bg-opacity)) !important;
-}
 .bg-white {
   --bs-bg-opacity: 1;
   background-color: #fff !important;

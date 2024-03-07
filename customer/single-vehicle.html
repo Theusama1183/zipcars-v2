@@ -214,7 +214,7 @@
             <div class="dashboard-title">
               <h1>Book Your Ride</h1>
               <div class="breadcrimb">
-                <span>Home / Book Your Ride</span>
+                <span>Home / Book Your Ride / Book Now</span>
               </div>
             </div>
             <div class="block d-flex">
@@ -613,311 +613,202 @@
               </ul>
             </div>
           </div>
-          <div class="content px-4">
-            <div class="row">
-              <div class="col-lg mt-4">
-                <div class="form-contaniner">
-                  <div class="form-wrapper">
-                    <form class="form" action="" method="get">
-                      <div class="row">
-                        <div
-                          class="col-12 col-sm-6 col-md-4 col-lg-3 mt-2 d-flex align-items-center"
-                        >
-                          <img
-                            src="assets/icons/location-blue-ico.svg"
-                            alt=""
-                          />
-                          <div class="input-wrapper">
-                            <label for="Select_Route">Pickup Location</label
-                            ><br />
+          <div class="content px-4 h-100">
+            <div class="row p-0 h-100">
+              <div class="col-md-4 col-sm-6 single-form-wrapper">
+                <div class="user-switcher">
+                  <div class="btn-group" role="group" aria-label="Switcher">
+                    <input
+                      type="radio"
+                      class="btn-check"
+                      name="bookType"
+                      id="OneWay"
+                      autocomplete="off"
+                      checked=""
+                    />
+                    <label class="btn btn-outline-primary" for="OneWay"
+                      >One Way</label
+                    >
 
-                            <select
-                              name="Pickup_Location"
-                              id="Pickup_Location"
-                              required="required"
-                            >
-                              <option selected="" disabled="">
-                                Select your pickup location?
-                              </option>
-                            </select>
-                          </div>
-                        </div>
-                        <div
-                          class="col-12 col-sm-6 col-md-4 col-lg-3 mt-2 d-flex align-items-center"
-                        >
-                          <img
-                            src="assets/icons/location-blue-ico.svg"
-                            alt=""
-                          />
-                          <div class="input-wrapper">
-                            <label for="Select_Route">Pickup Location</label
-                            ><br />
+                    <input
+                      type="radio"
+                      class="btn-check"
+                      name="bookType"
+                      id="driverAccount"
+                      autocomplete="off"
+                    />
+                    <label class="btn btn-outline-primary" for="driverAccount"
+                      >Driver</label
+                    >
+                  </div>
+                </div>
 
-                            <select
-                              name="Pickup_Location"
-                              id="Pickup_Location"
-                              required="required"
-                            >
-                              <option selected="" disabled="">
-                                Select your pickup location?
-                              </option>
-                            </select>
-                          </div>
-                        </div>
-                        <div
-                          class="col-12 col-sm-6 col-md-4 col-lg-3 mt-2 d-flex align-items-center"
+                <form class="form" id="bookNowForm">
+                  <div class="details-fieldset">
+                    <div class="text m-4">
+                      <h4 class="text-center">Book Your Ride</h4>
+                      <p class="text-center">
+                        Please enter your location details & experience your
+                        ride
+                      </p>
+                    </div>
+                    <div class="mt-2 d-flex align-items-center input-field">
+                      <img src="assets/icons/location-blue-ico.svg" alt="" />
+                      <div class="input-wrapper">
+                        <select
+                          name="Pickup_Location"
+                          id="Pickup_Location"
+                          required="required"
                         >
-                          <img src="assets/icons/calander.svg" alt="" />
-                          <div class="input-wrapper">
-                            <label for="Pickup_Date">Pickup Date</label><br />
-                            <input
-                              type="text"
-                              name="Pickup_Date"
-                              id="Pickup_Date"
-                              placeholder="Add your date here"
-                              onfocus="(this.type='date')"
-                              onblur="(this.type='text')"
-                            />
-                          </div>
-                        </div>
-                        <div
-                          class="col-12 col-sm-6 col-md-4 col-lg-3 mt-2 d-flex align-items-center"
-                        >
-                          <img src="assets/icons/clock-fill.svg" alt="" />
-                          <div class="input-wrapper">
-                            <label for="Pickup_Time">Pickup Time</label><br />
-                            <input
-                              type="text"
-                              name="Pickup_Time"
-                              id="Pickup_Time"
-                              placeholder="Add your time here"
-                              onfocus="(this.type='time')"
-                              onblur="(this.type='text')"
-                            />
-                          </div>
-                        </div>
-                        <div
-                          class="col-lg d-flex align-items-center mt-4 justify-content-center"
-                        >
-                          <div class="btn-wrapper">
-                            <button type="submit" class="btn-submit">
-                              Search
-                            </button>
-                          </div>
-                        </div>
+                          <option selected="" disabled="">
+                            Select your pickup location?
+                          </option>
+                        </select>
                       </div>
-                    </form>
+                      <img src="assets/icons/arrow-down-s-line.svg" alt="" />
+                    </div>
+                    <div class="mt-2 d-flex align-items-center input-field">
+                      <img src="assets/icons/location-blue-ico.svg" alt="" />
+                      <div class="input-wrapper">
+                        <select
+                          name="Drop_Location"
+                          id="Drop_Location"
+                          required="required"
+                        >
+                          <option selected="" disabled="">
+                            Select Drop Off Location
+                          </option>
+                        </select>
+                      </div>
+                      <img src="assets/icons/arrow-down-s-line.svg" alt="" />
+                    </div>
+                    <div class="mt-2 d-flex align-items-center input-field">
+                      <img src="assets/icons/calander.svg" alt="" />
+                      <div class="input-wrapper">
+                        <input
+                          type="text"
+                          name="Pickup_Date"
+                          id="Pickup_Date"
+                          placeholder="Select your date"
+                          onfocus="(this.type='date')"
+                          onblur="(this.type='text')"
+                        />
+                      </div>
+                      <img src="assets/icons/arrow-down-s-line.svg" alt="" />
+                    </div>
+                    <div class="mt-2 d-flex align-items-center input-field">
+                      <img src="assets/icons/clock-fill.svg" alt="" />
+                      <div class="input-wrapper">
+                        <input
+                          type="text"
+                          name="Pickup_Time"
+                          id="Pickup_Time"
+                          placeholder="Select your time"
+                          onfocus="(this.type='time')"
+                          onblur="(this.type='text')"
+                        />
+                      </div>
+                      <img src="assets/icons/arrow-down-s-line.svg" alt="" />
+                    </div>
+                    <div class="mt-2 d-flex align-items-center input-field">
+                      <img src="assets/icons/dollor-icon.svg" alt="" />
+                      <div class="input-wrapper">
+                        <input
+                          type="text"
+                          name="price"
+                          id="price"
+                          value="$25"
+                        />
+                      </div>
+                    </div>
+                    <div class="mt-2">
+                      <div class="btn-wrapper">
+                        <button id="Confirm" class="btn-submit">
+                          Confirm & Pay Now
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="payment-fieldset">
+                    <div class="text mt-4">
+                      <h4 class="d-flex justify-content-between">
+                        <img src="assets/icons/arrow-left-line.svg" alt="" />
+                        <span class="mr-5">Select Payment Method</span>
+                      </h4>
+                    </div>
+                    <div class="mt-2 d-flex align-items-center input-field">
+                      <div class="input-wrapper">
+                        <img
+                          src="assets/icons/payment_method_card_visa.png"
+                          alt=""
+                        />
+                        <label for="payment_method_card_visa">**** 5568</label>
+                        <input
+                          type="radio"
+                          name="payment_method_card_visa"
+                          id="payment_method_card_visa"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </form>
+                <!-- Popup -->
+                <div id="overlay" class="popup-overlay"></div>
+                <div id="bookNowPopup" class="book-now-popup">
+                  <div class="card-box p-4 text-center">
+                    <div
+                      class="block pt-0 d-flex justify-content-between align-items-center"
+                    >
+                      <div class="text text-start">
+                        <h2>Confirm Ride</h2>
+                      </div>
+                      <div class="close-btn">
+                        <a class="close" href="">
+                          <img src="assets/icons/close-icon.svg" alt="" />
+                        </a>
+                      </div>
+                    </div>
+                    <img
+                      class="p-4 w-50"
+                      src="assets/images/Confirm-Ride-car.png"
+                      alt=""
+                    />
+                    <div class="m-4">
+                      <button class="confirm-btn btn btn-primary w-100">
+                        Confirm
+                      </button>
+                      <a class="btn text-white bg-black mt-2 w-100" href="">
+                        Go Back
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="row mt-4">
-              <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-4">
-                <div class="card vehicle-card">
-                  <div class="vehicle-card-body">
-                    <img
-                      src="assets/Images/Honda-Civic.png"
-                      class="vehicle-image"
-                      alt=""
-                    />
-                    <div class="rating">
-                      <img src="assets/Images/star-frame.png" alt="" />
-                      <span>4.5 (32 Trips)</span>
+              <div class="col-md-8 col-sm-6">
+                <div class="card-box p-4 mt-4 h-100">
+                  <div
+                    class="block d-block d-md-flex align-items-center justify-content-between border-0"
+                  >
+                    <div class="text">
+                      <h2>Recent Bookings</h2>
                     </div>
-                    <h5 class="car-title">Honda Civic 23</h5>
-                    <p class="location-away">
-                      <img src="assets/icons/location-gray-fill.svg" alt="" />
-                      2.3 Miles away
-                    </p>
-                    <a href="/view-details.html" class="btn btn-outline mt-2"
-                      >View Details</a
-                    >
-                    <a href="/single-vehicle.html" class="btn btn-primary mt-2"
-                      >Book Now</a
-                    >
                   </div>
-                </div>
-              </div>
-              <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-4">
-                <div class="card vehicle-card">
-                  <div class="vehicle-card-body">
-                    <img
-                      src="assets/Images/Honda-Civic.png"
-                      class="vehicle-image"
-                      alt=""
-                    />
-                    <div class="rating">
-                      <img src="assets/Images/star-frame.png" alt="" />
-                      <span>4.5 (32 Trips)</span>
-                    </div>
-                    <h5 class="car-title">Toyota Corolla</h5>
-                    <p class="location-away">
-                      <img src="assets/icons/location-gray-fill.svg" alt="" />
-                      2.3 Miles away
-                    </p>
-                    <a href="/view-details.html" class="btn btn-outline mt-2"
-                      >View Details</a
-                    >
-                    <a href="/single-vehicle.html" class="btn btn-primary mt-2"
-                      >Book Now</a
-                    >
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-4">
-                <div class="card vehicle-card">
-                  <div class="vehicle-card-body">
-                    <img
-                      src="assets/Images/Honda-Civic.png"
-                      class="vehicle-image"
-                      alt=""
-                    />
-                    <div class="rating">
-                      <img src="assets/Images/star-frame.png" alt="" />
-                      <span>4.5 (32 Trips)</span>
-                    </div>
-                    <h5 class="car-title">Marcedes benz</h5>
-                    <p class="location-away">
-                      <img src="assets/icons/location-gray-fill.svg" alt="" />
-                      2.3 Miles away
-                    </p>
-                    <a href="/view-details.html" class="btn btn-outline mt-2"
-                      >View Details</a
-                    >
-                    <a href="/single-vehicle.html" class="btn btn-primary mt-2"
-                      >Book Now</a
-                    >
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-4">
-                <div class="card vehicle-card">
-                  <div class="vehicle-card-body">
-                    <img
-                      src="assets/Images/Honda-Civic.png"
-                      class="vehicle-image"
-                      alt=""
-                    />
-                    <div class="rating">
-                      <img src="assets/Images/star-frame.png" alt="" />
-                      <span>4.5 (32 Trips)</span>
-                    </div>
-                    <h5 class="car-title">Toyota Camry</h5>
-                    <p class="location-away">
-                      <img src="assets/icons/location-gray-fill.svg" alt="" />
-                      2.3 Miles away
-                    </p>
-                    <a href="/view-details.html" class="btn btn-outline mt-2"
-                      >View Details</a
-                    >
-                    <a href="/single-vehicle.html" class="btn btn-primary mt-2"
-                      >Book Now</a
-                    >
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-4">
-                <div class="card vehicle-card">
-                  <div class="vehicle-card-body">
-                    <img
-                      src="assets/Images/Honda-Civic.png"
-                      class="vehicle-image"
-                      alt=""
-                    />
-                    <div class="rating">
-                      <img src="assets/Images/star-frame.png" alt="" />
-                      <span>4.5 (32 Trips)</span>
-                    </div>
-                    <h5 class="car-title">Toyota Camry</h5>
-                    <p class="location-away">
-                      <img src="assets/icons/location-gray-fill.svg" alt="" />
-                      2.3 Miles away
-                    </p>
-                    <a href="/view-details.html" class="btn btn-outline mt-2"
-                      >View Details</a
-                    >
-                    <a href="/single-vehicle.html" class="btn btn-primary mt-2"
-                      >Book Now</a
-                    >
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-4">
-                <div class="card vehicle-card">
-                  <div class="vehicle-card-body">
-                    <img
-                      src="assets/Images/Honda-Civic.png"
-                      class="vehicle-image"
-                      alt=""
-                    />
-                    <div class="rating">
-                      <img src="assets/Images/star-frame.png" alt="" />
-                      <span>4.5 (32 Trips)</span>
-                    </div>
-                    <h5 class="car-title">Toyota Camry</h5>
-                    <p class="location-away">
-                      <img src="assets/icons/location-gray-fill.svg" alt="" />
-                      2.3 Miles away
-                    </p>
-                    <a href="/view-details.html" class="btn btn-outline mt-2"
-                      >View Details</a
-                    >
-                    <a href="/single-vehicle.html" class="btn btn-primary mt-2"
-                      >Book Now</a
-                    >
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-4">
-                <div class="card vehicle-card">
-                  <div class="vehicle-card-body">
-                    <img
-                      src="assets/Images/Honda-Civic.png"
-                      class="vehicle-image"
-                      alt=""
-                    />
-                    <div class="rating">
-                      <img src="assets/Images/star-frame.png" alt="" />
-                      <span>4.5 (32 Trips)</span>
-                    </div>
-                    <h5 class="car-title">Toyota Camry</h5>
-                    <p class="location-away">
-                      <img src="assets/icons/location-gray-fill.svg" alt="" />
-                      2.3 Miles away
-                    </p>
-                    <a href="/view-details.html" class="btn btn-outline mt-2"
-                      >View Details</a
-                    >
-                    <a href="/single-vehicle.html" class="btn btn-primary mt-2"
-                      >Book Now</a
-                    >
-                  </div>
-                </div>
-              </div>
-              <div class="col-12 col-sm-6 col-md-4 col-lg-3 mt-4">
-                <div class="card vehicle-card">
-                  <div class="vehicle-card-body">
-                    <img
-                      src="assets/Images/Honda-Civic.png"
-                      class="vehicle-image"
-                      alt=""
-                    />
-                    <div class="rating">
-                      <img src="assets/Images/star-frame.png" alt="" />
-                      <span>4.5 (32 Trips)</span>
-                    </div>
-                    <h5 class="car-title">Toyota Camry</h5>
-                    <p class="location-away">
-                      <img src="assets/icons/location-gray-fill.svg" alt="" />
-                      2.3 Miles away
-                    </p>
-                    <a href="/view-details.html" class="btn btn-outline mt-2"
-                      >View Details</a
-                    >
-                    <a href="/single-vehicle.html" class="btn btn-primary mt-2"
-                      >Book Now</a
-                    >
-                  </div>
+                  <table
+                    class="table recent-booking-list-table table-responsive-lg"
+                  >
+                    <tbody>
+                      <div
+                        class="h-100 no-bookings-found d-flex justify-content-between align-items-center"
+                      >
+                        <img
+                          width="100"
+                          class="m-auto"
+                          src="assets/images/no-bookings-found.png"
+                          alt=""
+                        />
+                      </div>
+                    </tbody>
+                  </table>
                 </div>
               </div>
             </div>
@@ -925,6 +816,7 @@
         </main>
       </div>
     </div>
+
     <script src="assets/vendor/libs/jquery/jquery.js"></script>
     <script src="assets/js/script.js"></script>
     <script src="assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.js"></script>

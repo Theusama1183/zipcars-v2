@@ -24,3 +24,16 @@ document.addEventListener("DOMContentLoaded", function () {
     profileWrapper.classList.toggle("show");
   });
 });
+
+function showConfirmPopup() {
+  var bookNowPopup = document.getElementById("bookNowPopup");
+  var overlay = document.getElementById("overlay");
+  bookNowPopup.style.display = "block";
+  overlay.style.display = "block";
+}
+
+document.querySelector("#Confirm").addEventListener("click", function (event) {
+  event.preventDefault();
+
+  showConfirmPopup();
+});

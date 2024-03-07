@@ -9,6 +9,9 @@ html {
 .text-black {
   color: #000000 !important;
 }
+.bg-black {
+  background-color: #000000 !important;
+}
 .text-primary {
   color: #008bd3 !important;
 }
@@ -254,6 +257,12 @@ ul.dropdown-notifications-wrapper {
   line-height: 30px;
   color: #000 !important;
 }
+.payment-fieldset .input-wrapper label {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 25px;
+  color: #000 !important;
+}
 .input-wrapper input,
 select {
   background: none;
@@ -325,4 +334,95 @@ select:disabled {
 .btn-outline {
   border: 1px solid #008bd3 !important;
   color: #008bd3 !important;
+}
+.single-form-wrapper {
+  padding: 30px !important;
+  background-color: #f7f7f7;
+  height: 100%;
+}
+.user-switcher {
+  box-sizing: border-box;
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  border-radius: 30px;
+}
+.btn-check {
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+  pointer-events: none;
+  background: #008bd3;
+}
+select {
+  appearance: none;
+}
+.btn-outline-primary:not(:disabled):not(.disabled).active,
+.btn-outline-primary:not(:disabled):not(.disabled):active,
+.show > .btn-outline-primary.dropdown-toggle {
+  color: #697a8d;
+  background-color: transparent;
+  border-color: transparent;
+}
+.user-switcher label {
+  width: 100%;
+}
+.user-switcher .btn-group {
+  width: 100%;
+}
+.user-switcher .btn-group > .btn-check:checked + .btn {
+  background: #008bd3;
+  color: #fff;
+  border-radius: 50px !important;
+}
+.single-form-wrapper h4 {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+}
+.single-form-wrapper p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 22px;
+  color: #000000;
+}
+.single-form-wrapper .input-field {
+  box-sizing: border-box;
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  border-radius: 10px;
+  padding: 10px;
+  position: relative;
+}
+.single-form-wrapper .input-field::after {
+  content: "";
+}
+
+.single-form-wrapper .form img {
+  width: 24px;
+}
+.single-form-wrapper .form .btn-submit {
+  width: 100% !important;
+  background: #008bd3;
+  border-radius: 10px !important;
+}
+.popup-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+  z-index: 9998; /* Put it behind the popup */
+}
+
+.book-now-popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  z-index: 9999;
+  width: 630px;
 }

@@ -47,4 +47,22 @@
   .form-wrapper {
     border-radius: 30px;
   }
+  .single-form-wrapper {
+    padding: 30px 10px !important;
+    height: auto !important;
+  }
+}
+@media screen and (max-width: 767px) {
+  .book-now-popup {
+    width: 90%;
+    padding: 10px;
+  }
+  .breadcrimb {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    top: auto;
+    bottom: 5px;
+  }
 }

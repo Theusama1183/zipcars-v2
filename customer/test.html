@@ -1,37 +1,127 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      .main_card .select-payment-options {
+        width: 469px;
+        height: auto;
+        margin-left: 90px;
+        margin-top: 30px;
+      }
+      .select-payment-options .select[data-selected="true"] {
+        border-color: #000000;
+      }
+      .select-payment-options .select {
+        width: 100%;
+        height: 95px;
+        background: #ffffff;
+        border: 1px solid #eaeaea;
+        border-radius: 5px;
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+
+      .select-payment-options .select[data-selected="true"] .check-box {
+        background: #000000;
+        border-color: #000;
+        background: #1d3cc6;
+        border-color: #1d3cc6;
+      }
+      .select-payment-options .select .check-box {
+        width: 33px;
+        height: 33px;
+        background: #ffffff;
+        border: 2px solid #bcbcbc;
+        border-radius: 50%;
+        margin-left: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: 0.3s;
+      }
+      .select-payment-options
+        .select[data-selected="true"]
+        .check-box
+        .check-dot {
+        width: 15px;
+        height: 15px;
+        transform: scale(1);
+      }
+      .select-payment-options .select .check-box .check-dot {
+        width: 15px;
+        height: 15px;
+        background: #fff;
+        border-radius: 50%;
+        transition: 0.3s;
+        transform: scale(0);
+      }
+      .select-payment-options .select .titles {
+        margin-left: 15px;
+      }
+      .select-payment-options .select .titles h5 {
+        font-size: 16px;
+        line-height: 20px;
+        color: #1a1b38;
+        margin-top: 1px;
+      }
+    </style>
   </head>
   <body>
-    <div class="row">
-      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
-        incidunt eos obcaecati enim voluptatem quas, vel numquam, non culpa ex
-        reiciendis dolore optio fuga nihil itaque hic repellendus. Cupiditate,
-        doloremque.
+    <div class="select-payment-options">
+      <div class="select" data-selected="false">
+        <div class="check-box"><div class="check-dot"></div></div>
+        <div class="titles">
+          <h5>**** 5568</h5>
+        </div>
       </div>
-      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
-        incidunt eos obcaecati enim voluptatem quas, vel numquam, non culpa ex
-        reiciendis dolore optio fuga nihil itaque hic repellendus. Cupiditate,
-        doloremque.
+
+      <div class="select" data-selected="false">
+        <div class="check-box"><div class="check-dot"></div></div>
+        <div class="titles">
+          <h4>Feed a child for 3 day</h4>
+          <h5>16.50 USD</h5>
+        </div>
       </div>
-      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
-        incidunt eos obcaecati enim voluptatem quas, vel numquam, non culpa ex
-        reiciendis dolore optio fuga nihil itaque hic repellendus. Cupiditate,
-        doloremque.
-      </div>
-      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
-        incidunt eos obcaecati enim voluptatem quas, vel numquam, non culpa ex
-        reiciendis dolore optio fuga nihil itaque hic repellendus. Cupiditate,
-        doloremque.
+
+      <div class="select" data-selected="false">
+        <div class="check-box"><div class="check-dot"></div></div>
+        <div class="titles">
+          <h4>Feed a child for 7 day</h4>
+          <h5>38.50 USD</h5>
+        </div>
       </div>
     </div>
+
+    <script>
+      var select_card = document.querySelectorAll(".select");
+
+      var reset = () => {
+        select_card.forEach((k) => {
+          k.setAttribute("data-selected", "false");
+        });
+      };
+
+      select_card.forEach((a, i) => {
+        a.addEventListener("click", (e) => {
+          reset();
+          a.setAttribute("data-selected", "true");
+          selected = i + 1;
+        });
+      });
+
+      var select_btn = document.querySelector(".select-btn");
+
+      var container = document.querySelector(".container");
+
+      var exit_btn = document.querySelector(".exit-btn");
+
+      exit_btn.addEventListener("click", () => {
+        container.style.display = "none";
+      });
+    </script>
   </body>
 </html>
