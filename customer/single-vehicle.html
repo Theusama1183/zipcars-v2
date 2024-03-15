@@ -13,6 +13,7 @@
     />
     <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico" />
     <link rel="stylesheet" href="assets/vendor/css/rtl/core.css" />
+    <link rel="stylesheet" href="assets/vendor/libs/spiner/spiner.css" />
   </head>
   <body>
     <div class="container-fluid h-100">
@@ -25,7 +26,7 @@
               <div class="sidebar-logo">
                 <img src="assets/images/logo.png" class="w-75" alt="Logo" />
                 <button class="close-hamburger-btn d-lg-none d-block">
-                  close
+                  <img src="assets/icons/close-icon.svg" alt="" />
                 </button>
               </div>
 
@@ -615,7 +616,7 @@
           </div>
           <div class="content px-4 h-100">
             <div class="row p-0 h-100">
-              <div class="col-md-4 col-sm-6 single-form-wrapper">
+              <div class="col-md-3 col-sm-6 single-form-wrapper">
                 <div class="user-switcher">
                   <div class="btn-group" role="group" aria-label="Switcher">
                     <input
@@ -665,7 +666,11 @@
                           </option>
                         </select>
                       </div>
-                      <img src="assets/icons/arrow-down-s-line.svg" alt="" />
+                      <img
+                        class="arrow-down"
+                        src="assets/icons/arrow-down-s-line.svg"
+                        alt=""
+                      />
                     </div>
                     <div class="mt-2 d-flex align-items-center input-field">
                       <img src="assets/icons/location-blue-ico.svg" alt="" />
@@ -680,7 +685,11 @@
                           </option>
                         </select>
                       </div>
-                      <img src="assets/icons/arrow-down-s-line.svg" alt="" />
+                      <img
+                        class="arrow-down"
+                        src="assets/icons/arrow-down-s-line.svg"
+                        alt=""
+                      />
                     </div>
                     <div class="mt-2 d-flex align-items-center input-field">
                       <img src="assets/icons/calander.svg" alt="" />
@@ -694,7 +703,11 @@
                           onblur="(this.type='text')"
                         />
                       </div>
-                      <img src="assets/icons/arrow-down-s-line.svg" alt="" />
+                      <img
+                        class="arrow-down"
+                        src="assets/icons/arrow-down-s-line.svg"
+                        alt=""
+                      />
                     </div>
                     <div class="mt-2 d-flex align-items-center input-field">
                       <img src="assets/icons/clock-fill.svg" alt="" />
@@ -708,7 +721,11 @@
                           onblur="(this.type='text')"
                         />
                       </div>
-                      <img src="assets/icons/arrow-down-s-line.svg" alt="" />
+                      <img
+                        class="arrow-down"
+                        src="assets/icons/arrow-down-s-line.svg"
+                        alt=""
+                      />
                     </div>
                     <div class="mt-2 d-flex align-items-center input-field">
                       <img src="assets/icons/dollor-icon.svg" alt="" />
@@ -729,30 +746,223 @@
                       </div>
                     </div>
                   </div>
-                  <div class="payment-fieldset">
+                  <div class="payment-fieldset" style="display: none">
                     <div class="text mt-4">
                       <h4 class="d-flex justify-content-between">
                         <img src="assets/icons/arrow-left-line.svg" alt="" />
                         <span class="mr-5">Select Payment Method</span>
                       </h4>
                     </div>
-                    <div class="mt-2 d-flex align-items-center input-field">
-                      <div class="input-wrapper">
-                        <img
-                          src="assets/icons/payment_method_card_visa.png"
-                          alt=""
-                        />
-                        <label for="payment_method_card_visa">**** 5568</label>
+                    <div class="payment-options">
+                      <div class="payment-option"></div>
+                      <div class="payment-option">
                         <input
                           type="radio"
-                          name="payment_method_card_visa"
-                          id="payment_method_card_visa"
+                          id="visa_card"
+                          name="payment"
+                          value="visa card"
+                        />
+                        <label for="visa_card">
+                          <img
+                            src="assets/images/payment_method_card_visa.png"
+                            alt="Visa Logo"
+                          />
+                          **** 5568
+                        </label>
+                      </div>
+                      <div class="payment-option">
+                        <input
+                          type="radio"
+                          id="mastercard"
+                          name="payment"
+                          value="mastercard"
+                        />
+                        <label for="mastercard">
+                          <img
+                            src="assets/images/payment_method_card_master.png"
+                            alt="Mastercard Logo"
+                          />
+                          **** 5568
+                        </label>
+                      </div>
+                      <div class="payment-option">
+                        <input
+                          type="radio"
+                          id="apple_pay"
+                          name="payment"
+                          value="apple_pay"
+                        />
+                        <label for="apple_pay">
+                          <img
+                            src="assets/images/payment_method_apple_pay.png"
+                            alt="ApplePay Logo"
+                          />
+                          ApplePay
+                        </label>
+                      </div>
+                      <div class="payment-option">
+                        <input
+                          type="radio"
+                          id="google_pay"
+                          name="payment"
+                          value="google_pay"
+                        />
+                        <label for="google_pay">
+                          <img
+                            src="assets/images/payment_method_google_pay.png"
+                            alt="ApplePay Logo"
+                          />
+                          Google Pay
+                        </label>
+                      </div>
+                      <div class="payment-option">
+                        <input
+                          type="radio"
+                          id="paypal"
+                          name="payment"
+                          value="paypal"
+                        />
+                        <label for="paypal">
+                          <img
+                            src="assets/images/payment_method_paypal.png"
+                            alt="ApplePay Logo"
+                          />
+                          Paypal
+                        </label>
+                      </div>
+                      <div class="payment-option">
+                        <input
+                          type="radio"
+                          id="amazon_pay"
+                          name="payment"
+                          value="amazon_pay"
+                        />
+                        <label for="amazon_pay">
+                          <img
+                            src="assets/images/payment_method_amazon_pay.png"
+                            alt="ApplePay Logo"
+                          />
+                          Amazon Pay
+                        </label>
+                      </div>
+                    </div>
+                    <div class="text mt-4 py-2">
+                      <h4 class="text-center">Add Discount Code</h4>
+                    </div>
+                    <div class="mt-2 d-flex align-items-center input-field">
+                      <img
+                        src="assets/icons/discount-percent-fill.svg"
+                        alt=""
+                      />
+                      <div class="input-wrapper">
+                        <input
+                          type="text"
+                          name="Discount_Code"
+                          id="Discount_Code"
+                          placeholder="Discount Code`"
                         />
                       </div>
                     </div>
+                    <button
+                      type="submit"
+                      id="form_submit"
+                      class="mt-4 w-100 btn btn-primary"
+                    >
+                      Pay Now
+                    </button>
                   </div>
                 </form>
-                <!-- Popup -->
+                <div class="form-submit-loading" style="display: none">
+                  <div class="loading-wrapper">
+                    <div class="lds-spinner">
+                      <div></div>
+                      <div></div>
+                      <div></div>
+                      <div></div>
+                      <div></div>
+                      <div></div>
+                      <div></div>
+                      <div></div>
+                      <div></div>
+                      <div></div>
+                      <div></div>
+                      <div></div>
+                    </div>
+                    <span class="mt-4">Your booking being processed</span>
+                  </div>
+                </div>
+                <!-- confirm ride Popup -->
+                <div id="overlay" class="popup-overlay"></div>
+                <div id="formSubmitPopup" class="book-now-popup">
+                  <div class="card-box p-4 text-center">
+                    <div
+                      class="block pt-0 d-flex justify-content-between align-items-center"
+                    >
+                      <div class="text text-start">
+                        <h2>Simon Alexander</h2>
+                      </div>
+                      <div class="close-btn">
+                        <a class="close" href="">
+                          <img src="assets/icons/close-icon.svg" alt="" />
+                        </a>
+                      </div>
+                    </div>
+                    <div
+                      class="d-md-flex justify-content-between align-items-center"
+                    >
+                      <div class="img-block">
+                        <img
+                          class="p-4"
+                          src="assets/images/driver.png"
+                          alt=""
+                        />
+                      </div>
+                      <div class="batch-block">
+                        <div
+                          class="batch-blocks d-flex justify-content-between align-items-center"
+                        >
+                          <span
+                            class="bg primary border-full text-light px-4 py-3"
+                            >Trusted
+                            <img
+                              class="ml-2"
+                              src="assets/icons/verified-user-rounded.svg"
+                              alt=""
+                          /></span>
+                          <span class="h-divider ml-4 mr-4"></span>
+                          <span
+                            class="bg primary border-full text-light px-4 py-3"
+                            >Driver Since <span class="text-white">2019</span>
+                          </span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="d-details">
+                      <div
+                        class="bordered radius-10 p-3 text-start text-black mt-4"
+                      >
+                        Phone No: +956 665 5689
+                      </div>
+                      <div
+                        class="bordered radius-10 p-3 text-start text-black mt-2"
+                      >
+                        Email Address: drive@example.com
+                      </div>
+                      <div
+                        class="bordered radius-10 p-3 text-start text-black mt-2"
+                      >
+                        Car Number: FZ 4959
+                      </div>
+                      <div
+                        class="bordered radius-10 p-3 text-start text-black mt-2"
+                      >
+                        District: Colombo
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- confirm ride Popup -->
                 <div id="overlay" class="popup-overlay"></div>
                 <div id="bookNowPopup" class="book-now-popup">
                   <div class="card-box p-4 text-center">
@@ -784,7 +994,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-8 col-sm-6">
+              <div class="col-md-9 col-sm-6">
                 <div class="card-box p-4 mt-4 h-100">
                   <div
                     class="block d-block d-md-flex align-items-center justify-content-between border-0"
@@ -794,21 +1004,68 @@
                     </div>
                   </div>
                   <table
+                    id="bookingTable"
                     class="table recent-booking-list-table table-responsive-lg"
                   >
                     <tbody>
-                      <div
-                        class="h-100 no-bookings-found d-flex justify-content-between align-items-center"
-                      >
-                        <img
-                          width="100"
-                          class="m-auto"
-                          src="assets/images/no-bookings-found.png"
-                          alt=""
-                        />
-                      </div>
+                      <tr>
+                        <td>
+                          <div class="vehicle d-flex align-items-center">
+                            <img
+                              src="assets/images/Honda-Civic-23.png"
+                              alt=""
+                            />
+                            <div class="text ml-4">
+                              <h5 class="vehicle-name">Honda Civic 23</h5>
+                              <span class="vehicle-rating">
+                                <img src="assets/icons/star-fill.svg" alt="" />
+                                4.5 (32 Trips)
+                              </span>
+                            </div>
+                          </div>
+                          <span class="status Upcoming mt-4">Upcoming</span>
+                        </td>
+                        <td>
+                          <p class="gray-text">Pick Up Location</p>
+                          <p class="text-lg">Airport, HongKong</p>
+                          <p class="gray-text mt-4">Pick Up Date &amp; Time</p>
+                          <p class="text-lg">02 Feb 2024, 02:40 PM</p>
+                        </td>
+                        <td>
+                          <p class="gray-text">Drop Off Location</p>
+                          <p class="text-lg">Best Hotal, HongKong</p>
+                          <p class="gray-text mt-4">Price</p>
+                          <p class="text-lg">$254</p>
+                        </td>
+                        <td>
+                          <div class="btn-wrap">
+                            <button class="btn btn-primary w-100">
+                              Details
+                            </button>
+                          </div>
+                          <div class="btn-wrap mt-2">
+                            <button class="btn btn-primary w-100">Chat</button>
+                          </div>
+                          <div class="btn-wrap mt-2">
+                            <button class="btn btn-danger w-100">Cancel</button>
+                          </div>
+                        </td>
+                      </tr>
                     </tbody>
                   </table>
+
+                  <div
+                    id="noBookingsMessage"
+                    class="h-100 no-bookings-found"
+                    style="display: none"
+                  >
+                    <img
+                      width="100"
+                      class="m-auto"
+                      src="assets/images/no-bookings-found.png"
+                      alt="No bookings found"
+                    />
+                  </div>
                 </div>
               </div>
             </div>

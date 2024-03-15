@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/mobile.responsiv.css" />
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css" />
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="assets/bootstrap/css/bootstrap-reboot.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Setup Account | Zip Car</title>
+  </head>
+  <body>
+    <body>
+      <section class="login-section">
+        <div class="container-fluid">
+          <div class="row">
+            <div
+              class="col-md-5 login-sidebar d-flex flex-column justify-content-end p-md-5"
+            >
+              <p class="text-white">Book Now Your Experience</p>
+              <h2 class="primary-text text-white">
+                Find & Book The Best Cars & Buses Easily
+              </h2>
+              <p class="text-white">
+                Want to book a car for camping, City riding or Airport? book the
+                best cars from us to get best experience.
+              </p>
+            </div>
+            <div
+              class="col-md-7 login-section-container d-flex flex-column justify-content-center"
+            >
+              <div class="login-container text-center m-auto">
+                <img src="assets/Images/website-logo.png" alt="" />
+
+                <form action="" method="post" class="form-wapper">
+                  <div class="user-switcher">
+                    <div class="btn-group" role="group" aria-label="Switcher">
+                      <input
+                        type="radio"
+                        class="btn-check"
+                        name="accountType"
+                        id="customerAccount"
+                        autocomplete="off"
+                      />
+                      <label
+                        class="btn btn-outline-primary rounded-pill mb-0 border-0"
+                        for="customerAccount"
+                        >Customer</label
+                      >
+
+                      <input
+                        type="radio"
+                        class="btn-check"
+                        name="accountType"
+                        id="driverAccount"
+                        autocomplete="off"
+                        checked
+                      />
+                      <label
+                        class="btn btn-outline-primary rounded-pill mb-0 border-0"
+                        for="driverAccount"
+                        >Driver</label
+                      >
+                    </div>
+                  </div>
+                  <h2 class="section-heading text-black mt-5">Setup Account</h2>
+                  <p>Here’s what you need to do to setup account</p>
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="valid_id_card"
+                    placeholder="Valid ID Card"
+                  />
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="vehicle_no"
+                    placeholder="Vehicle No."
+                  />
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="Password"
+                    placeholder="Enter your password"
+                  />
+                  <input
+                    type="text"
+                    class="form-control"
+                    name="driving-license-no"
+                    placeholder="Driving License No."
+                  />
+                  <div
+                    class="file-field-wrapper d-flex justify-content-between align-items-center"
+                  >
+                    <span class="file-name">Vehicle Registration Book/Car</span>
+                    <input
+                      type="file"
+                      id="vehicl_registration"
+                      name="vehicl_registration"
+                      class="d-none"
+                      onchange="accountLoadFile(event)"
+                    />
+                    <label for="vehicl_registration"
+                      ><img src="assets/icons/file-fill.svg" alt=""
+                    /></label>
+                  </div>
+                  <br />
+                  <div class="agreement-wrapper">
+                    <label for="agreement">
+                      <input type="checkbox" name="agreement" id="agreement" />
+                      Please review and agree to the
+                      <b
+                        ><a
+                          class="text-black"
+                          href="terms-and-service.html"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          >terms of service</a
+                        ></b
+                      >
+                      and
+                      <b
+                        ><a
+                          class="text-black"
+                          href="service-policies.html"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          >service policies</a
+                        ></b
+                      >
+                    </label>
+                  </div>
+
+                  <button type="submit" class="btn btn-primary w-100 mt-3 py-3">
+                    Submit
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </body>
+
+    <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

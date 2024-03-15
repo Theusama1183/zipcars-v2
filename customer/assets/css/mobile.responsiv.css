@@ -53,9 +53,20 @@
   }
 }
 @media screen and (max-width: 767px) {
-  .book-now-popup {
-    width: 90%;
+  .book-now-popup,
+  .invoice-popup {
+    width: 95%;
     padding: 10px;
+  }
+  .invoice-popup .card-box {
+    height: 500px;
+    overflow-y: auto;
+  }
+  .invoice-popup .close {
+    width: 50px;
+    height: 50px;
+    top: -10px;
+    right: -5px;
   }
   .breadcrimb {
     position: absolute;
@@ -64,5 +75,33 @@
     text-align: center;
     top: auto;
     bottom: 5px;
+  }
+}
+@media screen and (max-width: 486px) {
+  .batch-blocks {
+    flex-direction: column;
+  }
+  .h-divider {
+    transform: rotate(90deg);
+    height: 40px;
+  }
+  .content {
+    padding: 10px !important;
+  }
+  .card-box {
+    padding: 10px !important;
+  }
+  .reviews-table thead,
+  .reviews-table tbody {
+    padding: 0 10px !important;
+    display: block;
+  }
+  .reviews-table td,
+  .reviews-table th {
+    min-width: 180px !important;
+  }
+  .chat-message-right,
+  .chat-message-left {
+    width: 280px;
   }
 }
