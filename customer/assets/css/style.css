@@ -6,6 +6,9 @@ html {
   font-family: "Poppins" !important;
   background: #fff !important;
 }
+.container-fluid {
+  padding: 0;
+}
 .text-black {
   color: #000000 !important;
 }

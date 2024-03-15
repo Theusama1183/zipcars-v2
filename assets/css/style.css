@@ -3,6 +3,9 @@
 body {
   font-family: "Poppins" !important;
 }
+.container-fluid {
+  padding: 0;
+}
 .nav-link {
   color: #000000 !important;
 }
@@ -817,5 +820,5 @@ input#agreement {
   border-radius: 30px;
 }
 .banner-video-wrapper {
-  position: relative
-  }
+  position: relative;
+}
