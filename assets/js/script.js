@@ -14,27 +14,6 @@ toggleButton.addEventListener("click", function () {
   }
 });
 
-$(".owl-carousel").owlCarousel({
-  loop: true,
-  margin: 20,
-  nav: true,
-  navText: [
-    "<img src='assets/Images/left-arrow-ico.png'>",
-    "<img src='assets/Images/right-arrow-ico.png'>",
-  ],
-  responsive: {
-    0: {
-      items: 1,
-    },
-    600: {
-      items: 1,
-    },
-    1000: {
-      items: 3,
-    },
-  },
-});
-
 function changeImage(imageUrl) {
   var mainImage = $(".main-image");
   mainImage.attr("src", imageUrl);
@@ -47,16 +26,6 @@ function changeImage(imageUrl) {
 }
 
 $(document).ready(function () {
-  $("#mainImageSlider").slick({
-    dots: false,
-    infinite: true,
-    speed: 500,
-    fade: true,
-    cssEase: "linear",
-    prevArrow: '<button type="button" class="slick-prev">Previous</button>',
-    nextArrow: '<button type="button" class="slick-next">Next</button>',
-  });
-
   // Initialize elevatezoom
   $(".main-image").elevateZoom({
     zoomType: "inner",

@@ -168,7 +168,7 @@ a.btn.btn-outline {
 .vehicle-card:hover {
   box-sizing: border-box;
   border: 1px solid #eeeeee;
-  box-shadow: 0px 64px 75px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px -23px 150px rgba(0, 0, 0, 0.1);
   border-radius: 30px;
 }
 .rating {
@@ -358,12 +358,16 @@ a.btn.btn-outline {
   line-height: 36px;
   color: #000000;
 }
+footer {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 1) 20%, #eeeeee50 0%);
+}
 .col-heading {
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
   color: #222d2e;
-  margin-top: 60px;
+  margin-bottom: 60px;
 }
 .footer-nav {
   list-style: none;
@@ -506,6 +510,13 @@ section.customer-highlight-sction .container .row {
 }
 
 /* contact page css */
+.contact-terms {
+  font-size: 16px;
+  font-weight: 500;
+  color: #000;
+  margin-top: 20px;
+  text-align: center;
+}
 .contact-hero-section {
   background-image: url(../Images/ellipse-blue.png);
   background-position: center;
@@ -628,6 +639,38 @@ input#agreement {
   box-shadow: none !important;
   font-size: 20px !important;
   font-weight: 500 !important;
+}
+.accordion-button::after {
+  box-sizing: border-box;
+  width: 60px;
+  height: 60px;
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.swiper-button-next,
+.swiper-button-prev {
+  width: 30px !important;
+  height: 30px !important;
+  background: #fff;
+  color: #008bd3 !important;
+  padding: 15px;
+  border-radius: 30px;
+}
+button.zoom-button {
+  z-index: 9;
+}
+
+.accordion-button[aria-expanded="false"]::after {
+  content: url(../icons/plus-circle-icon.svg) !important;
+  background-image: none !important;
+}
+.accordion-button[aria-expanded="true"]::after {
+  content: url(../icons/minus-circle-icon.svg) !important;
+  background-image: none !important;
 }
 .accordion-body {
   padding: 1rem 1.25rem;
@@ -791,10 +834,37 @@ input#agreement {
 .whatsapp-ico-wrapper a img {
   width: 80px;
 }
-.vehicle-card {
-  height: 370px;
+.swiper-container {
+  overflow: hidden;
 }
 
+section.vehicle-list .container {
+  position: relative;
+}
+.vehicle-nav .swiper-button-prev {
+  left: -50px !important;
+}
+.vehicle-nav .swiper-button-next {
+  right: -50px !important;
+}
+.swiper-wrapper {
+  display: flex;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+  flex: 0 0 auto;
+}
+.carosual-nav {
+  position: absolute;
+  left: auto;
+  right: 70px;
+  top: 0;
+  margin-top: 50px;
+}
+.vehicle-card {
+  width: 100%;
+}
 #toggleButton {
   position: absolute;
   top: 50%;

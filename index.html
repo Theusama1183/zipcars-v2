@@ -8,11 +8,11 @@
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css" />
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
+
     <link
       rel="stylesheet"
       href="assets/bootstrap/css/bootstrap-reboot.min.css"
@@ -201,129 +201,135 @@
       <div class="container">
         <h5 class="h5 text-blue text-center">Vehicles</h5>
         <h2 class="section-heading text-center">Choose Your Vehicle</h2>
-        <div class="owl-carousel owl-theme">
-          <div class="item">
-            <div class="card vehicle-card">
-              <div class="vehicle-card-body">
-                <img
-                  src="assets/Images/car-1.png"
-                  class="vehicle-image"
-                  alt=""
-                />
-                <div class="rating">
-                  <img src="assets/Images/star-frame.png" alt="" />
-                  <span>4.5 (32 Trips)</span>
+        <div class="vehicle-nav">
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+        <div class="swiper-container vehicle-carousel">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="card vehicle-card">
+                <div class="vehicle-card-body">
+                  <img
+                    src="assets/Images/car-1.png"
+                    class="vehicle-image"
+                    alt=""
+                  />
+                  <div class="rating">
+                    <img src="assets/Images/star-frame.png" alt="" />
+                    <span>4.5 (32 Trips)</span>
+                  </div>
+                  <h5 class="car-title">Honda Civic 23</h5>
+                  <p class="location-away">
+                    <img src="assets/Images/location-icon.png" alt="" />
+                    2.3 Miles away
+                  </p>
+                  <a
+                    href="/single-vehicle.html"
+                    class="btn btn-primary w-100 mt-4"
+                    >Book Now</a
+                  >
                 </div>
-                <h5 class="car-title">Honda Civic 23</h5>
-                <p class="location-away">
-                  <img src="assets/Images/location-icon.png" alt="" />
-                  2.3 Miles away
-                </p>
-                <a
-                  href="/single-vehicle.html"
-                  class="btn btn-primary w-100 mt-4"
-                  >Book Now</a
-                >
               </div>
             </div>
-          </div>
-          <div class="item">
-            <div class="card vehicle-card">
-              <div class="vehicle-card-body">
-                <img
-                  src="assets/Images/car-2.png"
-                  class="vehicle-image"
-                  alt=""
-                />
-                <div class="rating">
-                  <img src="assets/Images/star-frame.png" alt="" />
-                  <span>4.5 (32 Trips)</span>
+            <div class="swiper-slide">
+              <div class="card vehicle-card">
+                <div class="vehicle-card-body">
+                  <img
+                    src="assets/Images/car-2.png"
+                    class="vehicle-image"
+                    alt=""
+                  />
+                  <div class="rating">
+                    <img src="assets/Images/star-frame.png" alt="" />
+                    <span>4.5 (32 Trips)</span>
+                  </div>
+                  <h5 class="car-title">Toyota Corolla</h5>
+                  <p class="location-away">
+                    <img src="assets/Images/location-icon.png" alt="" />
+                    2.3 Miles away
+                  </p>
+                  <a
+                    href="/single-vehicle.html"
+                    class="btn btn-primary w-100 mt-4"
+                    >Book Now</a
+                  >
                 </div>
-                <h5 class="car-title">Toyota Corolla</h5>
-                <p class="location-away">
-                  <img src="assets/Images/location-icon.png" alt="" />
-                  2.3 Miles away
-                </p>
-                <a
-                  href="/single-vehicle.html"
-                  class="btn btn-primary w-100 mt-4"
-                  >Book Now</a
-                >
               </div>
             </div>
-          </div>
-          <div class="item">
-            <div class="card vehicle-card">
-              <div class="vehicle-card-body">
-                <img
-                  src="assets/Images/car-3.png"
-                  class="vehicle-image"
-                  alt=""
-                />
-                <div class="rating">
-                  <img src="assets/Images/star-frame.png" alt="" />
-                  <span>4.5 (32 Trips)</span>
+            <div class="swiper-slide">
+              <div class="card vehicle-card">
+                <div class="vehicle-card-body">
+                  <img
+                    src="assets/Images/car-3.png"
+                    class="vehicle-image"
+                    alt=""
+                  />
+                  <div class="rating">
+                    <img src="assets/Images/star-frame.png" alt="" />
+                    <span>4.5 (32 Trips)</span>
+                  </div>
+                  <h5 class="car-title">Marcedes benz</h5>
+                  <p class="location-away">
+                    <img src="assets/Images/location-icon.png" alt="" />
+                    2.3 Miles away
+                  </p>
+                  <a
+                    href="/single-vehicle.html"
+                    class="btn btn-primary w-100 mt-4"
+                    >Book Now</a
+                  >
                 </div>
-                <h5 class="car-title">Marcedes benz</h5>
-                <p class="location-away">
-                  <img src="assets/Images/location-icon.png" alt="" />
-                  2.3 Miles away
-                </p>
-                <a
-                  href="/single-vehicle.html"
-                  class="btn btn-primary w-100 mt-4"
-                  >Book Now</a
-                >
               </div>
             </div>
-          </div>
-          <div class="item">
-            <div class="card vehicle-card">
-              <div class="vehicle-card-body">
-                <img
-                  src="assets/Images/car-4.png"
-                  class="vehicle-image"
-                  alt=""
-                />
-                <div class="rating">
-                  <img src="assets/Images/star-frame.png" alt="" />
-                  <span>4.5 (32 Trips)</span>
+            <div class="swiper-slide">
+              <div class="card vehicle-card">
+                <div class="vehicle-card-body">
+                  <img
+                    src="assets/Images/car-4.png"
+                    class="vehicle-image"
+                    alt=""
+                  />
+                  <div class="rating">
+                    <img src="assets/Images/star-frame.png" alt="" />
+                    <span>4.5 (32 Trips)</span>
+                  </div>
+                  <h5 class="car-title">Toyota Camry</h5>
+                  <p class="location-away">
+                    <img src="assets/Images/location-icon.png" alt="" />
+                    2.3 Miles away
+                  </p>
+                  <a
+                    href="/single-vehicle.html"
+                    class="btn btn-primary w-100 mt-4"
+                    >Book Now</a
+                  >
                 </div>
-                <h5 class="car-title">Toyota Camry</h5>
-                <p class="location-away">
-                  <img src="assets/Images/location-icon.png" alt="" />
-                  2.3 Miles away
-                </p>
-                <a
-                  href="/single-vehicle.html"
-                  class="btn btn-primary w-100 mt-4"
-                  >Book Now</a
-                >
               </div>
             </div>
-          </div>
-          <div class="item">
-            <div class="card vehicle-card">
-              <div class="vehicle-card-body">
-                <img
-                  src="assets/Images/car-4.png"
-                  class="vehicle-image"
-                  alt=""
-                />
-                <div class="rating">
-                  <img src="assets/Images/star-frame.png" alt="" />
-                  <span>4.5 (32 Trips)</span>
+            <div class="swiper-slide">
+              <div class="card vehicle-card">
+                <div class="vehicle-card-body">
+                  <img
+                    src="assets/Images/car-4.png"
+                    class="vehicle-image"
+                    alt=""
+                  />
+                  <div class="rating">
+                    <img src="assets/Images/star-frame.png" alt="" />
+                    <span>4.5 (32 Trips)</span>
+                  </div>
+                  <h5 class="car-title">Toyota Camry</h5>
+                  <p class="location-away">
+                    <img src="assets/Images/location-icon.png" alt="" />
+                    2.3 Miles away
+                  </p>
+                  <a
+                    href="/single-vehicle.html"
+                    class="btn btn-primary w-100 mt-4"
+                    >Book Now</a
+                  >
                 </div>
-                <h5 class="car-title">Toyota Camry</h5>
-                <p class="location-away">
-                  <img src="assets/Images/location-icon.png" alt="" />
-                  2.3 Miles away
-                </p>
-                <a
-                  href="/single-vehicle.html"
-                  class="btn btn-primary w-100 mt-4"
-                  >Book Now</a
-                >
               </div>
             </div>
           </div>
@@ -457,131 +463,168 @@
             </h2>
           </div>
         </div>
-        <div class="owl-carousel owl-theme">
-          <div class="item">
-            <div class="testimonial-card">
-              <div class="testimonial-user d-flex align-items-center">
-                <img
-                  src="assets/Images/Martina-Lucia.png"
-                  class="testimonial-image"
-                  alt=""
-                />
-                <div class="user">
-                  <span class="user-name">Martina Lucia</span>
-                  <span class="user-location">Parkstreet, HongKong</span>
+        <div class="carosual-nav">
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+        <div class="swiper-container testimonial-carousel">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="testimonial-card">
+                <div class="testimonial-user d-flex align-items-center">
+                  <img
+                    src="assets/Images/Martina-Lucia.png"
+                    class="testimonial-image"
+                    alt=""
+                  />
+                  <div class="user">
+                    <span class="user-name">Martina Lucia</span>
+                    <span class="user-location">Parkstreet, HongKong</span>
+                  </div>
+                </div>
+                <div class="testimonial-content">
+                  <p>
+                    Lorem Ipsum&nbsp;is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s, when an unknown
+                    printer took a galley of type and scrambled it to make.
+                  </p>
+                </div>
+                <div class="rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-half"></i>
+                  <span class="rating-count">4.5</span>
                 </div>
               </div>
-              <div class="testimonial-content">
-                <p>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s, when an unknown
-                  printer took a galley of type and scrambled it to make.
-                </p>
+            </div>
+            <div class="swiper-slide">
+              <div class="testimonial-card">
+                <div class="testimonial-user d-flex align-items-center">
+                  <img
+                    src="assets/Images/Martina-Lucia.png"
+                    class="testimonial-image"
+                    alt=""
+                  />
+                  <div class="user">
+                    <span class="user-name">Martina Lucia</span>
+                    <span class="user-location">Parkstreet, HongKong</span>
+                  </div>
+                </div>
+                <div class="testimonial-content">
+                  <p>
+                    Lorem Ipsum&nbsp;is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s, when an unknown
+                    printer took a galley of type and scrambled it to make.
+                  </p>
+                </div>
+                <div class="rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-half"></i>
+                  <span class="rating-count">4.5</span>
+                </div>
               </div>
-              <div class="rating">
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star-half"></i>
-                <span class="rating-count">4.5</span>
+            </div>
+            <div class="swiper-slide">
+              <div class="testimonial-card">
+                <div class="testimonial-user d-flex align-items-center">
+                  <img
+                    src="assets/Images/Martina-Lucia.png"
+                    class="testimonial-image"
+                    alt=""
+                  />
+                  <div class="user">
+                    <span class="user-name">Martina Lucia</span>
+                    <span class="user-location">Parkstreet, HongKong</span>
+                  </div>
+                </div>
+                <div class="testimonial-content">
+                  <p>
+                    Lorem Ipsum&nbsp;is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s, when an unknown
+                    printer took a galley of type and scrambled it to make.
+                  </p>
+                </div>
+                <div class="rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-half"></i>
+                  <span class="rating-count">4.5</span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="testimonial-card">
+                <div class="testimonial-user d-flex align-items-center">
+                  <img
+                    src="assets/Images/Martina-Lucia.png"
+                    class="testimonial-image"
+                    alt=""
+                  />
+                  <div class="user">
+                    <span class="user-name">Martina Lucia</span>
+                    <span class="user-location">Parkstreet, HongKong</span>
+                  </div>
+                </div>
+                <div class="testimonial-content">
+                  <p>
+                    Lorem Ipsum&nbsp;is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s, when an unknown
+                    printer took a galley of type and scrambled it to make.
+                  </p>
+                </div>
+                <div class="rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-half"></i>
+                  <span class="rating-count">4.5</span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="testimonial-card">
+                <div class="testimonial-user d-flex align-items-center">
+                  <img
+                    src="assets/Images/Martina-Lucia.png"
+                    class="testimonial-image"
+                    alt=""
+                  />
+                  <div class="user">
+                    <span class="user-name">Martina Lucia</span>
+                    <span class="user-location">Parkstreet, HongKong</span>
+                  </div>
+                </div>
+                <div class="testimonial-content">
+                  <p>
+                    Lorem Ipsum&nbsp;is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy text ever since the 1500s, when an unknown
+                    printer took a galley of type and scrambled it to make.
+                  </p>
+                </div>
+                <div class="rating">
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star"></i>
+                  <i class="fa fa-star-half"></i>
+                  <span class="rating-count">4.5</span>
+                </div>
               </div>
             </div>
           </div>
-          <!-- <div class="item">
-            <div class="testimonial-card">
-              <div class="testimonial-user d-flex align-items-center">
-                <img
-                  src="assets/Images/Manial-Sharaft.png"
-                  class="testimonial-image"
-                  alt=""
-                />
-                <div class="user">
-                  <span class="user-name">Manial Sharaft</span>
-                  <span class="user-location">Parkstreet, HongKong</span>
-                </div>
-              </div>
-              <div class="testimonial-content">
-                <p>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s, when an unknown
-                  printer took a galley of type and scrambled it to make.
-                </p>
-              </div>
-              <div class="rating">
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star-half"></i>
-                <span class="rating-count">4.5</span>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div class="testimonial-card">
-              <div class="testimonial-user d-flex align-items-center">
-                <img
-                  src="assets/Images/Martina-Lucia.png"
-                  class="testimonial-image"
-                  alt=""
-                />
-                <div class="user">
-                  <span class="user-name">Martina Lucia</span>
-                  <span class="user-location">Parkstreet, HongKong</span>
-                </div>
-              </div>
-              <div class="testimonial-content">
-                <p>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s, when an unknown
-                  printer took a galley of type and scrambled it to make.
-                </p>
-              </div>
-              <div class="rating">
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star-half"></i>
-                <span class="rating-count">4.5</span>
-              </div>
-            </div>
-          </div>
-          <div class="item">
-            <div class="testimonial-card">
-              <div class="testimonial-user d-flex align-items-center">
-                <img
-                  src="assets/Images/Martina-Lucia.png"
-                  class="testimonial-image"
-                  alt=""
-                />
-                <div class="user">
-                  <span class="user-name">Martina Lucia</span>
-                  <span class="user-location">Parkstreet, HongKong</span>
-                </div>
-              </div>
-              <div class="testimonial-content">
-                <p>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard dummy text ever since the 1500s, when an unknown
-                  printer took a galley of type and scrambled it to make.
-                </p>
-              </div>
-              <div class="rating">
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star"></i>
-                <i class="fa fa-star-half"></i>
-                <span class="rating-count">4.5</span>
-              </div>
-            </div>
-          </div> -->
         </div>
       </div>
     </section>
@@ -729,6 +772,37 @@
       </div>
     </div>
     <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".vehicle-carousel", {
+        slidesPerView: "4",
+        spaceBetween: 20,
+        loop: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
+    <script>
+      var swiper = new Swiper(".testimonial-carousel", {
+        slidesPerView: "4",
+        spaceBetween: 20,
+        loop: true,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    </script>
     <script src="assets/js/script.js"></script>
   </body>
 </html>

@@ -23,7 +23,70 @@
     />
     <title>Home | Zip Car</title>
   </head>
+
   <body>
+    <style>
+      swiper-container {
+        width: 100%;
+        height: 100%;
+      }
+
+      swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      swiper-container {
+        width: 100%;
+        height: 300px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      swiper-slide {
+        background-size: cover;
+        background-position: center;
+      }
+
+      .productImage {
+        height: 80%;
+        width: 100%;
+      }
+
+      .productImage2 {
+        height: 20%;
+        box-sizing: border-box;
+        padding: 10px 0;
+      }
+
+      .productImage2 swiper-slide {
+        width: 25%;
+        height: 100%;
+        opacity: 0.4;
+      }
+
+      .productImage2 .swiper-slide-thumb-active {
+        opacity: 1;
+      }
+
+      swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    </style>
     <section
       data-bs-version="5.1"
       class="menu menu2 cid-u4VwLOrqME"
@@ -146,41 +209,61 @@
               </div>
             </div>
             <div class="main-image-container">
-              <div id="mainImageSlider">
-                <img
-                  src="assets/Images/gallary-car-1.png"
-                  alt="Main Image"
-                  class="main-image"
-                />
-                <!-- Add more images as needed -->
-              </div>
+              <div class="img-zoom-result" id="zoomResult"></div>
               <button class="zoom-button" onclick="toggleZoom()">
                 <img src="assets/Images/zoom-btn.png" alt="" />
               </button>
-            </div>
-            <div class="gallery">
-              <div class="thumbnails">
-                <img
-                  src="assets/Images/gallary-car-2.png"
-                  onclick="changeImage('assets/Images/gallary-car-2.png')"
-                  alt="Image 1"
-                />
-                <img
-                  src="assets/Images/gallary-car-3.png"
-                  onclick="changeImage('assets/Images/gallary-car-3.png')"
-                  alt="Image 1"
-                /><img
-                  src="assets/Images/gallary-car-4.png"
-                  onclick="changeImage('assets/Images/gallary-car-4.png')"
-                  alt="Image 2"
-                />
-                <img
-                  src="assets/Images/gallary-car-5.png"
-                  onclick="changeImage('assets/Images/gallary-car-5.png')"
-                  alt="Image 3"
-                />
-                <!-- Add more images as needed -->
-              </div>
+              <swiper-container
+                style="
+                  --swiper-navigation-color: #008bd3;
+                  --swiper-navigation-size: 30px;
+                  --swiper-navigation-height: 30px;
+                "
+                class="productImage"
+                thumbs-swiper=".productImage2"
+                space-between="10"
+                navigation="true"
+              >
+                <swiper-slide>
+                  <img src="assets/Images/gallary-car-1.png" />
+                </swiper-slide>
+                <swiper-slide>
+                  <img src="assets/Images/gallary-car-2.png" />
+                </swiper-slide>
+                <swiper-slide>
+                  <img src="assets/Images/gallary-car-3.png" />
+                </swiper-slide>
+                <swiper-slide>
+                  <img src="assets/Images/gallary-car-4.png" />
+                </swiper-slide>
+                <swiper-slide>
+                  <img src="assets/Images/gallary-car-5.png" />
+                </swiper-slide>
+              </swiper-container>
+
+              <swiper-container
+                class="productImage2"
+                space-between="10"
+                slides-per-view="4"
+                free-mode="true"
+                watch-slides-progress="true"
+              >
+                <swiper-slide>
+                  <img src="assets/Images/gallary-car-1.png" />
+                </swiper-slide>
+                <swiper-slide>
+                  <img src="assets/Images/gallary-car-2.png" />
+                </swiper-slide>
+                <swiper-slide>
+                  <img src="assets/Images/gallary-car-3.png" />
+                </swiper-slide>
+                <swiper-slide>
+                  <img src="assets/Images/gallary-car-4.png" />
+                </swiper-slide>
+                <swiper-slide>
+                  <img src="assets/Images/gallary-car-5.png" />
+                </swiper-slide>
+              </swiper-container>
             </div>
             <ul
               class="d-flex align-items-center justify-content-between vehicle-features"
@@ -465,9 +548,7 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-5">
-            
-          </div>
+          <div class="col-lg-5"></div>
         </div>
       </div>
     </section>
@@ -614,5 +695,6 @@
 
     <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
   </body>
 </html>
