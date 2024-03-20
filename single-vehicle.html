@@ -183,7 +183,7 @@
     </section>
     <section class="vehicle-content-section">
       <div class="container">
-        <div class="row">
+        <div class="row pb-100">
           <div class="col-lg-7">
             <div class="d-flex align-items-center justify-content-between">
               <div class="block">
@@ -548,7 +548,91 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-5"></div>
+          <div class="col-lg-5">
+            <div class="ride-book-form-wrapper">
+              <form class="form">
+                <div class="details-fieldset">
+                  <div class="text m-4">
+                    <h4 class="text-center">Book Your Ride</h4>
+                    <p class="text-center">
+                      Please enter your location details &amp; experience your
+                      ride
+                    </p>
+                  </div>
+                  <div class="mt-2 d-flex align-items-center input-field">
+                    <img src="assets/icons/location-blue-ico.svg" alt="" />
+                    <div class="input-wrapper">
+                      <select
+                        name="Pickup_Location"
+                        id="Pickup_Location"
+                        required="required"
+                      >
+                        <option selected="" disabled="">
+                          Select your pickup location?
+                        </option>
+                      </select>
+                    </div>
+                    <img
+                      class="arrow-down"
+                      src="assets/icons/arrow-down-s-line.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="mt-2 d-flex align-items-center input-field">
+                    <img src="assets/icons/location-blue-ico.svg" alt="" />
+                    <div class="input-wrapper">
+                      <select
+                        name="Drop_Location"
+                        id="Drop_Location"
+                        required="required"
+                      >
+                        <option selected="" disabled="">
+                          Select Drop Off Location
+                        </option>
+                      </select>
+                    </div>
+                    <img
+                      class="arrow-down"
+                      src="assets/icons/arrow-down-s-line.svg"
+                      alt=""
+                    />
+                  </div>
+                  <div class="mt-2 d-flex align-items-center input-field">
+                    <img src="assets/icons/calander.svg" alt="" />
+                    <div class="input-wrapper">
+                      <input
+                        type="text"
+                        name="Pickup_Date"
+                        id="Pickup_Date"
+                        placeholder="Select your date"
+                        onfocus="(this.type='date')"
+                        onblur="(this.type='text')"
+                      />
+                    </div>
+                  </div>
+                  <div class="mt-2 d-flex align-items-center input-field">
+                    <img src="assets/icons/clock-fill.svg" alt="" />
+                    <div class="input-wrapper">
+                      <input
+                        type="text"
+                        name="Pickup_Time"
+                        id="Pickup_Time"
+                        placeholder="Select your time"
+                        onfocus="(this.type='time')"
+                        onblur="(this.type='text')"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="mt-2">
+                    <div class="btn-wrapper">
+                      <button class="btn-submit w-100">Book Now</button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
         </div>
       </div>
     </section>

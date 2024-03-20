@@ -561,9 +561,19 @@ video#myVideo {
   background-image: url(../Images/login-side-img.png);
   background-position: center;
   background-size: cover;
-  height: 100vh !important;
+  height: 100%;
+  position: fixed;
+  width: 42%;
 }
-
+.login-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.login-container img {
+  width: 250px;
+}
 .form-wapper {
   box-sizing: border-box;
   background: #ffffff;
@@ -891,4 +901,66 @@ section.vehicle-list .container {
 }
 .banner-video-wrapper {
   position: relative;
+}
+.ride-book-form-wrapper {
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  border-radius: 30px;
+  padding: 30px;
+}
+.ride-book-form-wrapper .details-fieldset h4 {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 48px;
+  text-align: center;
+  color: #000000;
+}
+.ride-book-form-wrapper .details-fieldset p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  color: #000000;
+}
+.input-field {
+  background: #ffffff;
+  border: 1px solid #eeeeee;
+  border-radius: 10px;
+  padding: 0 15px;
+  position: relative;
+}
+.ride-book-form-wrapper .details-fieldset .input-field img.arrow-down {
+  position: absolute;
+  left: auto;
+  right: 10px;
+}
+.input-field select {
+  border: 0;
+  padding: 15px;
+  margin-left: 10px;
+  width: 100%;
+  appearance: none;
+}
+.input-field input {
+  border: 0;
+  padding: 15px;
+  margin-left: 10px;
+  width: 100%;
+}
+.input-field input::placeholder {
+  color: #000;
+}
+.ride-book-form-wrapper .details-fieldset .btn-wrapper button {
+  border-radius: 10px !important;
+}
+.ride-book-form-wrapper .details-fieldset .input-field .input-wrapper {
+  width: 100%;
+}
+.input-field select:focus-visible {
+  border: 0;
+  outline: 0;
 }

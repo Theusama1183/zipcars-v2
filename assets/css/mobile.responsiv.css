@@ -77,45 +77,44 @@
   .primary-text {
     font-size: 48px;
     line-height: 56px;
-}
-.section-heading {
-  font-size: 36px;
-  line-height: 46px;
-}
-.vehicle-list h2 {
-  font-size: 36px;
-  line-height: 46px;
-}
-.testimonial-user {
-  flex-direction: column;
-}
-img.testimonial-image {
-  width: 64px !important;
-  margin-right: auto;
-}
-.testimonial-user .user {
-  margin-left: 0px;
-}
-.col-heading {
-  margin-top: 30px;
-}
-.footer-nav {
-  margin-top: 0;
-}
-.copywrite-section .col-lg {
-  justify-content: center;
-}
-.social-icon-wrapper {
-  justify-content: center !important;
-
-}
-.copywrite-text {
-  text-align: center;
-}
-.banner-video-wrapper {
-margin-top: 100px;
+  }
+  .section-heading {
+    font-size: 36px;
+    line-height: 46px;
+  }
+  .vehicle-list h2 {
+    font-size: 36px;
+    line-height: 46px;
+  }
+  .testimonial-user {
+    flex-direction: column;
+  }
+  img.testimonial-image {
+    width: 64px !important;
+    margin-right: auto;
+  }
+  .testimonial-user .user {
+    margin-left: 0px;
+  }
+  .col-heading {
+    margin-top: 30px;
+  }
+  .footer-nav {
+    margin-top: 0;
+  }
+  .copywrite-section .col-lg {
+    justify-content: center;
+  }
+  .social-icon-wrapper {
+    justify-content: center !important;
+  }
+  .copywrite-text {
+    text-align: center;
+  }
+  .banner-video-wrapper {
+    margin-top: 100px;
   }
   video#myVideo {
     width: 100%;
-}
+  }
 }
